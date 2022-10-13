@@ -4,15 +4,15 @@ const { Sequelize, DataTypes } = require("sequelize");
    // Instantiate Sequelize with SQLite.
    const sequelize = new Sequelize('sqlite::memory:');
 
-   const { STRING, NUMBER } = DataTypes;
+   const { NUMBER, STRING } = DataTypes;
    const Person = sequelize.define('Person', {
-      id: STRING,
+      id: NUMBER,
       name: STRING,
       lastName: STRING,
       age: NUMBER,
    });
    const Movie = sequelize.define('Movie', {
-      id: STRING,
+      id: NUMBER,
       title: STRING,
       year: NUMBER,
    });
