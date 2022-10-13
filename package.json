@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/helio7/sequelize-modelos/issues"
   },
-  "homepage": "https://github.com/helio7/sequelize-modelos#readme"
+  "homepage": "https://github.com/helio7/sequelize-modelos#readme",
+  "dependencies": {
+    "sequelize": "^6.25.1",
+    "sqlite3": "^5.1.2"
+  }
 }
