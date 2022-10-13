@@ -16,10 +16,19 @@ const { Sequelize, DataTypes } = require("sequelize");
       title: STRING,
       year: NUMBER,
    });
-   const PersonMovie = sequelize.define('PersonMovie', {
+   const DirectorMovie = sequelize.define('DirectorMovie', {
       id: NUMBER,
       personId: NUMBER,
       movieId: NUMBER,
-      position: STRING,
+   });
+   const ProducerMovie = sequelize.define('ProducerMovie', {
+      id: NUMBER,
+      personId: NUMBER,
+      movieId: NUMBER,
+   });
+   const CastMovie = sequelize.define('CastMovie', {
+      id: NUMBER,
+      personId: NUMBER,
+      movieId: NUMBER,
    });
 })();
