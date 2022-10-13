@@ -16,4 +16,10 @@ const { Sequelize, DataTypes } = require("sequelize");
       title: STRING,
       year: NUMBER,
    });
+   const PersonMovie = sequelize.define('PersonMovie', {
+      id: NUMBER,
+      personId: NUMBER,
+      movieId: NUMBER,
+      position: STRING,
+   });
 })();
