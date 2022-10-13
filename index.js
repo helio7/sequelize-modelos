@@ -5,7 +5,7 @@ const { Sequelize, DataTypes } = require("sequelize");
    const sequelize = new Sequelize('sqlite::memory:');
 
    const { STRING, NUMBER } = DataTypes;
-   const User = sequelize.define('User', {
+   const Person = sequelize.define('Person', {
       id: STRING,
       name: STRING,
       lastName: STRING,
